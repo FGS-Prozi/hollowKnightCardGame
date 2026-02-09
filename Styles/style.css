@@ -1,0 +1,98 @@
+:root {
+    --dark-blue: #0b0f1a;   /* prawie czarny, jaskiniowy mrok */
+    --blue: #1f2a44;       /* zimny, nocny granat */
+    --light-blue: #5f7fa3; /* eteryczny błękit dusz */
+    --white: #e6ecf2;      /* blada, nieczysta biel */
+}
+
+
+* {
+    font-family: "Comic Sans MS";
+    color: var(--white);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--dark-blue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, main, footer {
+    width: 80%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.divider {
+    height: 16px;
+    width: 100%;
+    border: none;
+    background-color: var(--light-blue);
+    margin: 16% 0%;
+}
+
+.cardDesc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    width: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    box-shadow:
+        0 0 5px var(--light-blue),
+        0 0 15px var(--light-blue),
+        0 0 30px var(--blue),
+        0 0 60px var(--blue);
+}
+
+
+.desc {
+    width: 50%;
+}
+
+span {
+    color: red;
+}
+
+li {
+    font-size: 1.5rem;
+}
